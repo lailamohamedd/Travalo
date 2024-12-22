@@ -1,0 +1,46 @@
+.navbar_section {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1.5em;
+  background-color: transparent;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  &_logo {
+    h1 {
+      color: #fff;
+    }
+  }
+  &_menu {
+    ul {
+      display: flex;
+      gap: 2.5em;
+      position: relative;
+      li {
+        cursor: pointer;
+      }
+      &::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        bottom: -1.5em;
+        left: 0;
+      }
+    }
+  }
+  &_menu_icon {
+    display: none;
+  }
+}
+@media (max-width: 460px) {
+  .navbar_section {
+    &_menu {
+      display: none;
+    }
+    &_menu_icon {
+      display: block;
+    }
+  }
+}

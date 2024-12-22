@@ -1,0 +1,34 @@
+.banner_section {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.swiper-pagination {
+  position: absolute !important;
+  z-index: 2 !important;
+  bottom: 2em !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  -webkit-transform: translateX(-50%) !important;
+  -moz-transform: translateX(-50%) !important;
+  -ms-transform: translateX(-50%) !important;
+  -o-transform: translateX(-50%) !important;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  width: auto !important;
+  gap: 2em;
+  &-bullet {
+    font-size: 20px !important;
+    &-active {
+      background-color: transparent !important;
+    }
+  }
+}
+@media (max-width: 460px) {
+  .swiper-pagination {
+    &-bullet {
+      font-size: 14px !important;
+    }
+  }
+}
