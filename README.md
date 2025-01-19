@@ -1,4 +1,4 @@
-# Tailwind UI
+# Tailwind UI App
 
 # Travalo
 
