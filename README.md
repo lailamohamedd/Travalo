@@ -1,4 +1,4 @@
-# React + Vite + Sass
+# Tailwind UI
 
 # Travalo
 
